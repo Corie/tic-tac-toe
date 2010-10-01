@@ -36,7 +36,11 @@ In order to make (reasonable-moves run) faster we need to write the following
 functions:
 
 (remaining-combinations board move)
-(combo-value board combo)
+
+(combo-value board combo) 
+combo-value decides wether a specific move could result in a definite win or probably win.
+Either decision would be based boolean style. 
+
 (hightest-combo-value board move)
 
 We also need to test best-move.
